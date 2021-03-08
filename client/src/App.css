@@ -8,7 +8,7 @@
   --primary-hover-red: #f33501;
 }
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 /* NAVBAR */
 .logo {
@@ -70,7 +70,6 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .main-info h1 {
@@ -78,6 +77,11 @@ nav ul li {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem i !important;
+  }
+}
 /* HEADER MAIN OFFER BUTTON */
 .btn-main-offer {
   border: 1px solid var(--primary-red);
@@ -86,4 +90,34 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/* ABOUT ME */
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img {
+  width: 16rem;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-orange);
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
 }
