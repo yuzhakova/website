@@ -1,5 +1,5 @@
-import React from 'react';
-import TestimonialsCarousel from './TestimonialsCarousel';
+import React from "react";
+import TestimonialsCarousel from "./TestimonialsCarousel";
 
 const Testimonials = () => {
   return (

@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDesktop,
   faTable,
   faFileExcel,
   faExclamation,
-} from '@fortawesome/free-solid-svg-icons';
-import axios from 'axios';
+} from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 const Service = ({ name, description }) => {
   return (
@@ -27,7 +27,7 @@ const Services = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('/services').then((response) => {
+    axios.get("/services").then((response) => {
       setServices(response.data);
       setLoading(false);
     });

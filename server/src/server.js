@@ -1,16 +1,16 @@
-require('dotenv').config();
+require("dotenv").config();
 
-const { response } = require('express');
-const express = require('express');
-const db = require('./db/connect');
+const { response } = require("express");
+const express = require("express");
+const db = require("./db/connect");
 
 const application = express();
 
-application.get('/', (request, response) => {
-  response.send('It works');
+application.get("/", (request, response) => {
+  response.send("It works");
 });
 
-application.get('/services', (request, response) => {
+application.get("/services", (request, response) => {
   db.query(
     `
   SELECT services.id, services.name, services.description, services.price, categories.name as category
@@ -22,5 +22,5 @@ application.get('/services', (request, response) => {
 });
 
 application.listen(3001, () => {
-  console.log('Server listening!');
+  console.log("Server listening!");
 });

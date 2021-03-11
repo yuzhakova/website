@@ -1,10 +1,10 @@
-import React from 'react';
-import logo from '../logo.png';
+import React from "react";
+import logo from "../logo.png";
 // navbar links to scroll to corresponding sections
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 // react font awesome import
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <FontAwesomeIcon icon={faBars} style={{ color: 'fff' }} />
+          <FontAwesomeIcon icon={faBars} style={{ color: "fff" }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">

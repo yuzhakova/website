@@ -1,22 +1,22 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true,
 });
-exports['default'] = void 0;
+exports["default"] = void 0;
 
 function _typeof(obj) {
-  if (typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol') {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     _typeof = function _typeof(obj) {
       return typeof obj;
     };
   } else {
     _typeof = function _typeof(obj) {
       return obj &&
-        typeof Symbol === 'function' &&
+        typeof Symbol === "function" &&
         obj.constructor === Symbol &&
         obj !== Symbol.prototype
-        ? 'symbol'
+        ? "symbol"
         : typeof obj;
     };
   }
@@ -24,7 +24,7 @@ function _typeof(obj) {
 }
 
 function _getRequireWildcardCache() {
-  if (typeof WeakMap !== 'function') return null;
+  if (typeof WeakMap !== "function") return null;
   var cache = new WeakMap();
   _getRequireWildcardCache = function _getRequireWildcardCache() {
     return cache;
@@ -38,7 +38,7 @@ function _interopRequireWildcard(obj) {
   }
   if (
     obj === null ||
-    (_typeof(obj) !== 'object' && typeof obj !== 'function')
+    (_typeof(obj) !== "object" && typeof obj !== "function")
   ) {
     return { default: obj };
   }
@@ -61,7 +61,7 @@ function _interopRequireWildcard(obj) {
       }
     }
   }
-  newObj['default'] = obj;
+  newObj["default"] = obj;
   if (cache) {
     cache.set(obj, newObj);
   }
@@ -72,7 +72,7 @@ var reportWebVitals = function reportWebVitals(onPerfEntry) {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     Promise.resolve()
       .then(function () {
-        return _interopRequireWildcard(require('web-vitals'));
+        return _interopRequireWildcard(require("web-vitals"));
       })
       .then(function (_ref) {
         var getCLS = _ref.getCLS,
@@ -90,4 +90,4 @@ var reportWebVitals = function reportWebVitals(onPerfEntry) {
 };
 
 var _default = reportWebVitals;
-exports['default'] = _default;
+exports["default"] = _default;
