@@ -1,15 +1,26 @@
-const { response } = require('express')
-const express = require('express')
-const application = express()
+require('dotenv').config();
 
-application.get("/", (request, response) => {
-  response.send('It works')
-})
+const { response } = require('express');
+const express = require('express');
+const db = require('./db/connect');
 
-application.get("/services", (request, response) => response.json([
-  {id: 1, label: "service A"},
-  {id: 2, label: "service B"}
+const application = express();
 
-]))
+application.get('/', (request, response) => {
+  response.send('It works');
+});
 
-application.listen(3000, () => console.log("Server listening!"))
+application.get('/services', (request, response) => {
+  db.query(
+    `
+  SELECT services.id, services.name, services.description, services.price, categories.name as category
+  FROM services
+  JOIN categories ON categories.id = services.category_id
+  WHERE active IS TRUE;
+  `
+  ).then((result) => response.json(result.rows));
+});
+
+application.listen(3001, () => {
+  console.log('Server listening!');
+});

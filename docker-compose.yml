@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:12.2
+    restart: always
+    ports:
+      - '5432:5432'
+    env_file:
+      - ./config/postgres/pg.env
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+      - ./server/src/db/schema:/docker-entrypoint-initdb.d
+volumes:
+  database-data:
