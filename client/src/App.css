@@ -350,3 +350,20 @@ nav ul li {
 .footer p {
   margin-bottom: 0;
 }
+
+/* Contact component*/
+.contact {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contact h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
