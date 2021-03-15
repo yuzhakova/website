@@ -10,15 +10,11 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2018-2021</h3>
+            <h3>2018-2021 Business Analyst, Horizon Distributors</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              - Work on projects including data integrity and harmonization
+              <br />- Worked on mergers and acquisitions for a national group
+              <br />- Worked on implementing a new ERP system
             </p>
           </div>
         </div>
@@ -26,15 +22,11 @@ const Experience = () => {
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2014-2018</h3>
+            <h3>2014-2018 Purchasing Data Coordinator, Horizon Distributors</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              - Generated, maintained, analyzed and developed reports
+              <br />- Aligned initiatives with technology solutions
+              <br />- Participated in projects to improve department KPIs
             </p>
           </div>
         </div>
@@ -42,15 +34,12 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2013-2014</h3>
+            <h3>2013-2014 Records Management Specialist, EY</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              - Managed internal and external records databases
+              <br />- Ensured compliance with the firm’s records retention
+              policy
+              <br />- Trained new staff on record management procedures
             </p>
           </div>
         </div>
@@ -58,15 +47,14 @@ const Experience = () => {
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2012-2013</h3>
+            <h3>
+              2012-2013 Sales and Procurement Coordinator, CanFisCo Jim Pattison
+            </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              - Executed reporting related to procurement, purchasing, inventory
+              <br />- Performed cost/quality and sales analysis for improved
+              visibility
+              <br />- Served as liaison with vendors and customs brokers
             </p>
           </div>
         </div>
@@ -74,15 +62,12 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2012</h3>
+            <h3>2012 Client Services Representative, RBC Royal Bank</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              - Conducted complex analysis of clients financial profiles
+              <br />- Provided solutions incorporating wealth management
+              techniques
+              <br />- Built strong client base of repeat business and referrals
             </p>
           </div>
         </div>
