@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+
 // import Typed from 'react-typed';
 
 const Header = () => {
@@ -22,7 +24,9 @@ const Header = () => {
           <input type="text" />
         </Typed> */}
         <a href="#" className="btn-main-offer">
-          contact me
+          <Link smooth={true} to="contact" href="#">
+            Contact
+          </Link>
         </a>
       </div>
     </div>

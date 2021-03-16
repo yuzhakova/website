@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -19,18 +20,44 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Home</a>
+                <a className="footer-nav">
+                  <Link smooth={true} to="home" href="#">
+                    Home
+                  </Link>
+                </a>
                 <br />
-                <a className="footer-nav">About me</a>
+                <a className="footer-nav">
+                  <Link smooth={true} to="about" offset={-110} href="#">
+                    About me
+                  </Link>
+                </a>
                 <br />
-                <a className="footer-nav">Services</a>
+                <a className="footer-nav">
+                  {" "}
+                  <Link smooth={true} to="services" href="#">
+                    Services
+                  </Link>
+                </a>
               </div>
               <div className="col">
-                <a className="footer-nav">Experience</a>
+                <a className="footer-nav">
+                  {" "}
+                  <Link smooth={true} to="experience" href="#">
+                    Experience
+                  </Link>
+                </a>
                 <br />
-                <a className="footer-nav">Portfolio</a>
+                <a className="footer-nav">
+                  <Link smooth={true} to="testimonials" href="#">
+                    Testimonials
+                  </Link>
+                </a>
                 <br />
-                <a className="footer-nav">Contact</a>
+                <a className="footer-nav">
+                  <Link smooth={true} to="contact" href="#">
+                    Contact
+                  </Link>
+                </a>
               </div>
             </div>
             <p className="pt-3 text-center">
