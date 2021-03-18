@@ -23,8 +23,8 @@ const AboutMe = () => {
             business, operations, technology, and innovation teams.
             <br />
             <br />
-            I am experienced with large, complex, enterprise-wide projects
-            including new ERP implementation, data harmonization, new reporting
+            I have experience with large, complex, enterprise-wide projects,
+            including new ERP implementation, data harmonization, reporting
             system integration, and operations mergers during acquisitions.
             <br />
             <br />
@@ -36,15 +36,15 @@ const AboutMe = () => {
             <br />
             <br />
             My unique value proposition is passion, focus, and innovation
-            combined with a strong work ethic and solution-oriented mentality,
-            with a thorough understanding of the business elements of a large
-            operation. I thrive on making a difference, contributing to the
-            success of the company, and embracing challenges and changes.
+            combined with a strong work ethic and solution-oriented mentality. I
+            thoroughly understand the business elements of a large operation. I
+            thrive on making a difference, contributing to the company's
+            success, and embracing challenges and changes.
             <br />
             <br />
             My current primary interest lies at the intersection of business
             analysis and web development. I am open to exploring new horizons
-            and discuss any opportunities working together.
+            and discussing any opportunities working together.
             <br />
           </p>
           <p>
@@ -61,8 +61,8 @@ const AboutMe = () => {
             <br />
             <br />
             <h5># DESIGN + DEVELOPMENT (processes + reports)</h5>
-            Project requirements definition, setup of project milestones,
-            phases, and elements, including project team formation.
+            Define project requirements, setup project milestones, phases, and
+            elements, including project team formation.
             <br />
             <br />
             NEW PROCESSES design via gathering details from subject matter
@@ -70,33 +70,33 @@ const AboutMe = () => {
             diagrams, studying system capabilities, and writing specifications.
             <br />
             <br />
-            NEW REPORTS design and production for performance tracking, results
-            measurement, key performance indicators analysis, business data
-            outline, insights with trends articulation, and risks and
-            opportunities identification. Development of easy-to-use tools that
-            effectively communicate complex information for strategic
-            decision-making.
+            NEW REPORTS design and production for performance tracking,
+            measurement of results, KPI analysis, business data outline,
+            insights with trends articulation, and risks and opportunities
+            identification. Development of easy-to-use tools that effectively
+            communicate complex information for strategic decision-making.
             <br />
             <br />
             <h5># IMPROVEMENT (processes + procedures)</h5>
-            Continuous systems and processes improvement recommendations to key
-            partners by studying business functions, current practices,
-            gathering information, and further implementation along with an
+            Deliver continuous systems and processes improvement recommendations
+            to key partners by studying business functions, current practices,
+            gathering information, and further implementation, along with an
             evaluation of output requirements.
             <br />
             <br />
             <h5>#CHANGE MANAGEMENT</h5>
             Experience in conceptualizing the changes and technical solutions,
             articulating the value for the different key partners, and
-            recommending the proposed change to the business followed by
+            recommending the proposed change to the business, followed by
             successful project delivery of quality and well-thought-out new
             processes and solutions.
             <br />
             <br />
-            <h5># DOCUMENTATION</h5> Documentation development and maintenance
-            of existing and future business requirements, processes, procedures,
-            and system protocols. Preparation and provision of references to
-            business, operating, user-oriented, and technical instructions.
+            <h5># DOCUMENTATION</h5>
+            Provide documentation development and maintenance of existing and
+            future business requirements, processes, procedures, and system
+            protocols. Prepare and provision business references, operating,
+            user-oriented, and technical instructions.
           </p>
         </div>
       </div>
