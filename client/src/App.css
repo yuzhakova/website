@@ -438,6 +438,15 @@ textarea.form-control {
   font-weight: 900;
   color: var(--primary-green);
 }
+
+/* typed text */
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+  background: transparent !important;
+  border-color: transparent;
+}
+
 /* media */
 @media (max-width: 768px) {
   .contact {
@@ -449,4 +458,4 @@ textarea.form-control {
   .contact p {
     padding: 0 0.4rem;
   }
-} ;
+}
