@@ -17,6 +17,9 @@ body {
   font-family: "Roboto Condensed", sans-serif !important;
 }
 /* NAVBAR */
+nav {
+  z-index: 2;
+}
 .logo {
   width: 16.25rem;
 }
@@ -46,6 +49,11 @@ nav ul li {
   height: 6rem !important;
 }
 
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
@@ -76,6 +84,8 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif !important;
+  z-index: 1;
 }
 
 .main-info h1 {
@@ -85,7 +95,7 @@ nav ul li {
 
 @media (max-width: 768px) {
   .main-info h1 {
-    font-size: 1.5rem i !important;
+    font-size: 1.7rem i !important;
   }
 }
 /* HEADER MAIN OFFER BUTTON */
@@ -439,14 +449,6 @@ textarea.form-control {
   color: var(--primary-green);
 }
 
-/* typed text */
-.typed-text {
-  font-size: 2rem;
-  color: var(--primary-white);
-  background: transparent !important;
-  border-color: transparent;
-}
-
 /* media */
 @media (max-width: 768px) {
   .contact {
@@ -459,3 +461,29 @@ textarea.form-control {
     padding: 0 0.4rem;
   }
 }
+
+/* typed text */
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+  background: transparent !important;
+  border-color: transparent;
+}
+@media (max-width: 768px) {
+  .typed-text {
+    font-size: 1.3rem i !important;
+  }
+}
+/* particles */
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+} ;
