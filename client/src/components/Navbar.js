@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../logo.png";
 // navbar links to scroll to corresponding sections
 import { Link } from "react-scroll";
 // react font awesome import
@@ -11,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img clalssName="logo" src={logo} alt="logo..." />
+          <img className="logo" src="/assets/logo.png" alt="logo..." />
         </a>
         <button
           className="navbar-toggler"

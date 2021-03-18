@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  nginx:
+    build: ./config/nginx
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+    depends_on:
+      - app
+  app:
+    build: "."
+    volumes:
+      - application-logs:/root/.pm2/logs
+    networks:
+      - app-network
+    env_file:
+      - ./server/.env
+volumes:
+  application-logs:
+networks:
+  app-network:
+    driver: bridge

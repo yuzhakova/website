@@ -6,9 +6,11 @@ const db = require("./db/connect");
 
 const application = express();
 
-application.get("/", (request, response) => {
-  response.send("It works");
-});
+// application.get("/", (request, response) => {
+//   response.send("It works");
+// });
+
+application.use(express.static("public"));
 
 application.get("/services", (request, response) => {
   db.query(
