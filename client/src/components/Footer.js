@@ -8,13 +8,43 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
-              <p>Based in Vancouver Canada</p>
+              <p style={{ color: "orange" }}>
+                * Website is built by{" "}
+                <Link smooth={true} to="about" offset={-110} href="#">
+                  me
+                </Link>
+                , Vancouver based BA/WebDev.
+                <br />
+                TechStack used: React.js, Bootstrap, Express & Node.js
+              </p>
             </div>
+            <br />
+
             <div className="d-flex">
               <a href="tel:604-880-5245">+1(604)880-5245</a>
             </div>
             <div className="d-flex">
-              <p>natalia.yuzhakova@gmail.com</p>
+              <a href="mailto:natalia.yuzhakova@gmail.com">
+                natalia.yuzhakova@gmail.com
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="d-flex">
+              <a className="navbar-brand" href="#">
+                <img
+                  className="logo"
+                  src="/assets/logo-white-on-transparent.png"
+                  alt="logo..."
+                />
+              </a>{" "}
+            </div>
+            <div className="d-flex">
+              <p className="pt-3 text-center">
+                Copyright&copy;
+                {new Date().getFullYear()}&nbsp;NYConsulting | All Rights
+                Reserved
+              </p>
             </div>
           </div>
           <div className="col-lg-3 col-md-2 col-sm-6">
@@ -60,10 +90,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <p className="pt-3 text-center">
-              Copyright&copy;
-              {new Date().getFullYear()}&nbsp;NYConsulting | All Rights Reserved
-            </p>
           </div>
         </div>
       </div>
