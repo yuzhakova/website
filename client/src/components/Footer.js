@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { ExternalLink } from "react-external-link";
 
 const Footer = () => {
   return (
@@ -10,9 +11,9 @@ const Footer = () => {
             <div className="d-flex">
               <p style={{ color: "orange" }}>
                 * Website is built by{" "}
-                <Link smooth={true} to="about" offset={-110} href="#">
+                <ExternalLink href="https://www.canva.com/design/DAEEPCm14hg/Jwu-q2cwH2dIHGqahKgl7g/view?utm_content=DAEEPCm14hg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
                   me
-                </Link>
+                </ExternalLink>
                 , Vancouver based BA/WebDev.
                 <br />
                 TechStack used: React.js, Bootstrap, Express & Node.js
