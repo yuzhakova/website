@@ -8,10 +8,10 @@
   --primary-orange: #f9ab00;
   --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
-  --primary-hover-red: #f33501;
+  --primary-hover-orange: #f9ab00;
   --primary-black: #000000;
   --primary-transparent-black: rgba(0, 0, 0, 0.7);
-  --primary-green: green;
+  --primary-green: #c7ea46;
 }
 body {
   font-family: "Roboto Condensed", sans-serif !important;
@@ -99,8 +99,15 @@ nav ul li {
   }
 }
 /* HEADER MAIN OFFER BUTTON */
+.btn btn-warning {
+  text-transform: uppercase !important;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  margin: 2rem;
+}
+
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 1px solid var(--primary-hover-orange);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -108,9 +115,15 @@ nav ul li {
   margin: 2rem;
 }
 
+.btn btn-warning:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-orange);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: var(--primary-hover-red);
+  background-color: var(--primary-hover-orange);
   color: var(--primary-white);
   transition: 0.2s ease-in-out;
 }
@@ -122,16 +135,23 @@ nav ul li {
   align-items: center;
 }
 .profile-img {
-  width: 16rem;
+  max-width: 50%;
+  height: 30%;
   padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }
-
+.profile-img:hover {
+  transform: scaleX(-1);
+}
 .about-heading {
   color: var(--primary-orange);
   text-transform: uppercase;
+  text-align: center;
 }
-
+.about-me {
+  margin-right: 4em;
+  margin-left: 2em;
+}
 @media (max-width: 468px) {
   .profile-img {
     width: 10rem;
@@ -175,6 +195,7 @@ nav ul li {
   margin-bottom: 1.875rem;
   background: var(--primary-white);
   transition: 0.3s ease-in-out;
+  overflow: auto;
 }
 
 .services .box:hover {
@@ -440,8 +461,7 @@ textarea.form-control {
 }
 
 .error-message {
-  color: var(--primary-white);
-  background: var(--primary-hover-red);
+  color: var(--primary-red);
 }
 
 .success-message {

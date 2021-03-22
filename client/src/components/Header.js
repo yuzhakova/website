@@ -23,7 +23,7 @@ const Header = () => {
         >
           <input className="typed-text" type="text" />
         </Typed>
-        <a href="contact" className="btn-main-offer">
+        <a href="contact" className="btn btn-warning">
           <Link smooth={true} to="contact" href="#">
             Contact
           </Link>
