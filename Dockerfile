@@ -10,7 +10,7 @@ RUN apt-get dist-upgrade
 RUN apt-get install build-essential curl -y
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install --force-yes nodejs
 
 FROM node as dependencies
 
