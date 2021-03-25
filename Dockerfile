@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get dist-upgrade
 RUN apt-get install build-essential curl -y
-
+RUN apt-key update
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
@@ -50,3 +50,4 @@ RUN npm install -g pm2
 EXPOSE 3001
 
 CMD ["pm2-runtime", "./config/services.config.js", "--only", "api"]
+
