@@ -1,5 +1,63 @@
 import React from "react";
 
+const blocks = [
+  {
+    header: "2018-2021 Business Analyst, Horizon Distributors",
+    bullets: [
+      "Worked on data integrity and harmonization projects",
+      "Worked on mergers and acquisitions for a national group",
+      "Worked on implementing a new ERP system",
+    ],
+  },
+  {
+    header: "2014-2018 Purchasing Data Coordinator, Horizon Distributors",
+    bullets: [
+      "Generated, maintained, analyzed and developed reports",
+      "Aligned initiatives with technology solutions",
+      "Participated in projects to improve department KPIs",
+    ],
+  },
+  {
+    header: "2013-2014 Records Management Specialist, EY",
+    bullets: [
+      "Managed internal and external records databases",
+      "Ensured compliance with the firm’s records retention policy",
+      "Trained new staff on record management procedures",
+    ],
+  },
+  {
+    header:
+      "2012-2013 Sales and Procurement Coordinator, CanFisCo Jim Pattison",
+    bullets: [
+      "Executed reporting related to procurement, purchasing, inventory",
+      "Performed cost/quality and sales analysis for improved visibility",
+      "Served as liaison with vendors and customs brokers",
+    ],
+  },
+  {
+    header: "2012 Client Services Representative, RBC Royal Bank",
+    bullets: [
+      "Conducted complex analysis of clients financial profiles",
+      "Provided solutions incorporating wealth management techniques",
+      "Built strong client base of repeat business and referrals",
+    ],
+  },
+];
+const TimelineBlock = ({ left, header, bullets }) => {
+  return (
+    <div className={`timeline-block timeline-block-${left ? "left" : "right"}`}>
+      <div className="marker"></div>
+      <div className="timeline-content">
+        <ul>
+          <h3>{header}</h3>
+          {bullets.map((bullet) => (
+            <li>{bullet}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
 const Experience = () => {
   return (
     <div id="experience" className="experience">
@@ -7,79 +65,13 @@ const Experience = () => {
         <h1>experience</h1>
       </div>
       <div className="container experience-wrapper">
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <ul>
-              <h3>2018-2021 Business Analyst, Horizon Distributors</h3>
-              <li>Worked on data integrity and harmonization projects</li>
-              <li>Worked on mergers and acquisitions for a national group</li>
-              <li>Worked on implementing a new ERP system</li>
-            </ul>
-          </div>
-        </div>
-        {/* - */}
-        <div className="timeline-block timeline-block-left">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <ul>
-              <h3>
-                2014-2018 Purchasing Data Coordinator, Horizon Distributors
-              </h3>
-              <li>Generated, maintained, analyzed and developed reports</li>
-              <li>Aligned initiatives with technology solutions</li>
-              <li>Participated in projects to improve department KPIs</li>
-            </ul>
-          </div>
-        </div>
-        {/* - */}
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <ul>
-              <h3>2013-2014 Records Management Specialist, EY</h3>
-              <li>Managed internal and external records databases</li>
-              <li>
-                Ensured compliance with the firm’s records retention policy
-              </li>
-              <li>Trained new staff on record management procedures</li>
-            </ul>
-          </div>
-        </div>
-        {/* - */}
-        <div className="timeline-block timeline-block-left">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <ul>
-              <h3>
-                2012-2013 Sales and Procurement Coordinator, CanFisCo Jim
-                Pattison
-              </h3>
-              <li>
-                Executed reporting related to procurement, purchasing, inventory
-              </li>
-              <li>
-                Performed cost/quality and sales analysis for improved
-                visibility
-              </li>
-              <li>Served as liaison with vendors and customs brokers</li>
-            </ul>
-          </div>
-        </div>
-        {/* - */}
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <ul>
-              <h3>2012 Client Services Representative, RBC Royal Bank</h3>
-              <li>Conducted complex analysis of clients financial profiles</li>
-              <li>
-                Provided solutions incorporating wealth management techniques
-              </li>
-              <li>Built strong client base of repeat business and referrals</li>
-            </ul>
-          </div>
-        </div>
+        {blocks.map((block, index) => (
+          <TimelineBlock
+            header={block.header}
+            bullets={block.bullets}
+            left={index % 2 !== 0}
+          />
+        ))}
       </div>
     </div>
   );
