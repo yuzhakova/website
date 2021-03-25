@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get dist-upgrade
 RUN apt-get install build-essential curl -y
-RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-get add -
+RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
