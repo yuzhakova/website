@@ -75,6 +75,7 @@ docker-compose -f docker-compose.production.yml run --rm --entrypoint "\
     --agree-tos \
     --force-renewal" certbot
 echo
+
 ​
 echo "### Reloading nginx ..."
 docker-compose -f docker-compose.production.yml exec nginx nginx -s reload
