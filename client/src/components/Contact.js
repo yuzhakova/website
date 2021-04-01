@@ -35,7 +35,7 @@ const Contact = () => {
       .then(() => {
         // console.log(result.text);
         setSuccessMessage(
-          "Your messages is received. I will contact you within 2 business days."
+          "Your message is received. I will contact you within 2 business days."
         );
       })
       .catch((err) => console.error(`Something went wrong ${err}`));
