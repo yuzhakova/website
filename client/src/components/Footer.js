@@ -75,12 +75,12 @@ const Footer = () => {
                     Experience
                   </Link>
                 </a>
-                <br />
+                {/* <br />
                 <a className="footer-nav">
                   <Link smooth={true} to="testimonials" href="#">
                     Testimonials
                   </Link>
-                </a>
+                </a> */}
                 <br />
                 <a className="footer-nav">
                   <Link smooth={true} to="contact" href="#">

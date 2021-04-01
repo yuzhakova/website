@@ -72,7 +72,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
+              {/* <Link
                 smooth={true}
                 to="testimonials"
                 offset={-110}
@@ -80,7 +80,7 @@ const Navbar = () => {
                 href="#"
               >
                 testimonials
-              </Link>
+              </Link> */}
             </li>
             <li className="nav-item">
               <Link

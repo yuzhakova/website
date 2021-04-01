@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 
@@ -39,7 +39,7 @@ function App() {
       <AboutMe />
       <Services />
       <Experience />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </>
