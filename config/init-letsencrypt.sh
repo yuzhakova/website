@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 ​
-domains=(nyconsulting.ca) # change this to the domain you want to get the cert for, doesn't support multiple domains right now
+domains=(*.nyconsulting.ca) # change this to the domain you want to get the cert for, doesn't support multiple domains right now
 rsa_key_size=4096
 data_path="../certbot"
 email="nataliay@nyconsulting.ca" # Adding a valid address is strongly recommended
