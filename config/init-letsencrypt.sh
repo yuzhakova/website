@@ -7,7 +7,7 @@ fi
 
 domains=(*.nyconsulting.ca) # change this to the domain you want to get the cert for, doesn't support multiple domains right now
 rsa_key_size=4096
-data_path="../certbot"
+data_path="./config/certbot"
 email="nataliay@nyconsulting.ca" # Adding a valid address is strongly recommended
 staging=1 # Set to 1 if you're testing your setup to avoid hitting request limits
 
